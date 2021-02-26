@@ -59,8 +59,8 @@ To create a radar chart:
             // will have a potential value between 0 and 1, and an initial value of 0.75
             new RadarNode("mysecondnode", "Oranges", "#ffa500", 0.75, 0, 1),
             // The final node has an ID of "mythirdnode", will be visually labelled "Bananas", will be colored dark yellow (#cccc00),
-            // will have a potential value between 25 and 28, and an initial value of 26.5
-            new RadarNode("mythirdnode", "Bananas", "#cccc00", 26.5, 25, 28)
+            // will have a potential value between 0 and 28, and an initial value of 26.5
+            new RadarNode("mythirdnode", "Bananas", "#cccc00", 26.5, 0, 28)
         ];
         
         var myRadarParams = 
@@ -81,3 +81,9 @@ To get the node values at any time:
     
     
 where doSomething is a function to process the ID/Value pairs. ID corresponds to the ID specified when constructing the Radar object.
+
+### TODO
+
+* The source code is not encapsulated.
+* Gets a bit weird if the "Min" value of a node is not zero.
+
