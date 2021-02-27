@@ -89,4 +89,5 @@ https://jsfiddle.net/68d74b91/1/
 
 * The source code is not encapsulated.
 * Gets a bit weird if the "Min" value of a node is not zero.
+* The drag-and-drop system estimates the intended position of a node based on linear distance between the mouse pointer and the origin (center) of the chart. This superficially works well higher values but is not especially suitable for values close to the center, which become hard to control. A perpendicular intersection of the relevant node's axis would be a much more logical approach; but I coludn't remember how to do 2D maths.
 
